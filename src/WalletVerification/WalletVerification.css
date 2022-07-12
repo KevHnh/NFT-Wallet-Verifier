@@ -1,0 +1,30 @@
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+}
+
+.gif {
+  width: 25vw;
+  justify-content: center;
+}
+
+.leftSide {
+  background-color: #1a1a1a;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+.rightContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}

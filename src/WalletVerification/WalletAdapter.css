@@ -1,0 +1,12 @@
+.walletfr {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    background-color: #1a1a1a;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+}
