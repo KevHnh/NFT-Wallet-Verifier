@@ -10,7 +10,6 @@ var index;
 export const WalletFetch: FC = () => {
     const { connection } = useConnection();
     const { publicKey } = useWallet();
-    const currID = localStorage.getItem('loggedID');
 
     const { nfts, isLoading } = useWalletNfts({
         publicAddress: walletPublicKey,
@@ -49,6 +48,12 @@ export const WalletFetch: FC = () => {
         }
     }
 
+    if (index === null || index === undefined) {
+        return <div className='text'>
+            You are not an EzseaNFT Holder
+        </div>
+    }
+
     if (!nfts?.length) {
         return (
             <div className="text">
@@ -58,12 +63,6 @@ export const WalletFetch: FC = () => {
     }
 
     console.log("INDEX VALUE: " + index)
-
-    if (index === null || index === undefined) {
-        return <div className='text'>
-            You are not an EzseaNFT Holder
-        </div>
-    }
 
     return (
         <div className="main1">
